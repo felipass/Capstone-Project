@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "d0700d24-79ec-487e-8403-b565bef7f8e0",
+		"name": "Mini Bookstore Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://x30xphrtvb.execute-api.us-east-1.amazonaws.com/dev/allbooks",
+							"protocol": "https",
+							"host": [
+								"x30xphrtvb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"allbooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Books By User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVxaHFib0FWQW1WNkxWQ1F1X01PZiJ9.eyJpc3MiOiJodHRwczovL2Rldi1wY2R1ZGI1OC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDAyMjYyMTg4NjMwODA5MDM3NTQiLCJhdWQiOlsiaHR0cHM6Ly9ib29rcy1hcGktcHJvamVjdCIsImh0dHBzOi8vZGV2LXBjZHVkYjU4LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2NDYzOTgxMzMsImV4cCI6MTY0NjQ4NDUzMywiYXpwIjoiMW92bnhLQXA0UFdVamhWQTEwWEVYWkwxYjZQOURodkMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.pQf-bkUmd9IILK6mW2b1g64Alr4wCpqkXuBP80UN4mgOILYfe7IoAdo8lCoo9kxMnkGfSX2KYq32wozT12kvkz91H6qbbHPdrKGG1JpEu0ZOUgUW-HY7j90yPVxuda0w25q_PbbUh0UpdoLlOw2nh8sM9C669edPg9xAWArVzV6CQwKpP0A0p82HLdrBiAsHM7vnGx51vPOKjBT0l7z8qVhrhXjepl2_p5TQvl9j4uvkfBoIxTpgdNqnITkC5dCBymiXaSjX-hRC-17MrB3oJiDMCbTfPBR06YBDGPcjpds8hBXUXkGZg9RcGv5wKyaxt1Ade7e2ieJtfnyGyB7t8A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://x30xphrtvb.execute-api.us-east-1.amazonaws.com/dev/books/users",
+							"protocol": "https",
+							"host": [
+								"x30xphrtvb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"books/users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVxaHFib0FWQW1WNkxWQ1F1X01PZiJ9.eyJpc3MiOiJodHRwczovL2Rldi1wY2R1ZGI1OC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDAyMjYyMTg4NjMwODA5MDM3NTQiLCJhdWQiOlsiaHR0cHM6Ly9ib29rcy1hcGktcHJvamVjdCIsImh0dHBzOi8vZGV2LXBjZHVkYjU4LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2NDYzOTgxMzMsImV4cCI6MTY0NjQ4NDUzMywiYXpwIjoiMW92bnhLQXA0UFdVamhWQTEwWEVYWkwxYjZQOURodkMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.pQf-bkUmd9IILK6mW2b1g64Alr4wCpqkXuBP80UN4mgOILYfe7IoAdo8lCoo9kxMnkGfSX2KYq32wozT12kvkz91H6qbbHPdrKGG1JpEu0ZOUgUW-HY7j90yPVxuda0w25q_PbbUh0UpdoLlOw2nh8sM9C669edPg9xAWArVzV6CQwKpP0A0p82HLdrBiAsHM7vnGx51vPOKjBT0l7z8qVhrhXjepl2_p5TQvl9j4uvkfBoIxTpgdNqnITkC5dCBymiXaSjX-hRC-17MrB3oJiDMCbTfPBR06YBDGPcjpds8hBXUXkGZg9RcGv5wKyaxt1Ade7e2ieJtfnyGyB7t8A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isbn\": \"976-5-16-134410-0\",\n\t\"title\": \"Ugly Love\",\n\t\"author\": \"John Grisham\",\n\t\"publisher\": \"New Test Ltd\"\n}"
+						},
+						"url": {
+							"raw": "https://x30xphrtvb.execute-api.us-east-1.amazonaws.com/dev/books",
+							"protocol": "https",
+							"host": [
+								"x30xphrtvb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Invalid Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVxaHFib0FWQW1WNkxWQ1F1X01PZiJ9.eyJpc3MiOiJodHRwczovL2Rldi1wY2R1ZGI1OC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDAyMjYyMTg4NjMwODA5MDM3NTQiLCJhdWQiOlsiaHR0cHM6Ly9ib29rcy1hcGktcHJvamVjdCIsImh0dHBzOi8vZGV2LXBjZHVkYjU4LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2NDYzOTgxMzMsImV4cCI6MTY0NjQ4NDUzMywiYXpwIjoiMW92bnhLQXA0UFdVamhWQTEwWEVYWkwxYjZQOURodkMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.pQf-bkUmd9IILK6mW2b1g64Alr4wCpqkXuBP80UN4mgOILYfe7IoAdo8lCoo9kxMnkGfSX2KYq32wozT12kvkz91H6qbbHPdrKGG1JpEu0ZOUgUW-HY7j90yPVxuda0w25q_PbbUh0UpdoLlOw2nh8sM9C669edPg9xAWArVzV6CQwKpP0A0p82HLdrBiAsHM7vnGx51vPOKjBT0l7z8qVhrhXjepl2_p5TQvl9j4uvkfBoIxTpgdNqnITkC5dCBymiXaSjX-hRC-17MrB3oJiDMCbTfPBR06YBDGPcjpds8hBXUXkGZg9RcGv5wKyaxt1Ade7e2ieJtfnyGyB7t8A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isbn\": \"976-5-16-134410-0\",\n\t\"title\": \"Ugly Love\",\n\t\"author\": \"John Grisham\",\n\t\"publisher\": 98765\n}"
+						},
+						"url": {
+							"raw": "https://x30xphrtvb.execute-api.us-east-1.amazonaws.com/dev/books",
+							"protocol": "https",
+							"host": [
+								"x30xphrtvb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Books",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVxaHFib0FWQW1WNkxWQ1F1X01PZiJ9.eyJpc3MiOiJodHRwczovL2Rldi1wY2R1ZGI1OC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDAyMjYyMTg4NjMwODA5MDM3NTQiLCJhdWQiOlsiaHR0cHM6Ly9ib29rcy1hcGktcHJvamVjdCIsImh0dHBzOi8vZGV2LXBjZHVkYjU4LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2NDYzOTgxMzMsImV4cCI6MTY0NjQ4NDUzMywiYXpwIjoiMW92bnhLQXA0UFdVamhWQTEwWEVYWkwxYjZQOURodkMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.pQf-bkUmd9IILK6mW2b1g64Alr4wCpqkXuBP80UN4mgOILYfe7IoAdo8lCoo9kxMnkGfSX2KYq32wozT12kvkz91H6qbbHPdrKGG1JpEu0ZOUgUW-HY7j90yPVxuda0w25q_PbbUh0UpdoLlOw2nh8sM9C669edPg9xAWArVzV6CQwKpP0A0p82HLdrBiAsHM7vnGx51vPOKjBT0l7z8qVhrhXjepl2_p5TQvl9j4uvkfBoIxTpgdNqnITkC5dCBymiXaSjX-hRC-17MrB3oJiDMCbTfPBR06YBDGPcjpds8hBXUXkGZg9RcGv5wKyaxt1Ade7e2ieJtfnyGyB7t8A"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isbn\": \"976-5-16-134410-0\",\n\t\"title\": \"Ugly Love\",\n\t\"author\": \"John Grisham\",\n\t\"publisher\": \"New Test Ltd\"\n}"
+						},
+						"url": {
+							"raw": "https://x30xphrtvb.execute-api.us-east-1.amazonaws.com/dev/books/223a72a3-54ce-4ffa-b95e-8de170e655a4",
+							"protocol": "https",
+							"host": [
+								"x30xphrtvb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"books",
+								"223a72a3-54ce-4ffa-b95e-8de170e655a4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVxaHFib0FWQW1WNkxWQ1F1X01PZiJ9.eyJpc3MiOiJodHRwczovL2Rldi1wY2R1ZGI1OC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDAyMjYyMTg4NjMwODA5MDM3NTQiLCJhdWQiOlsiaHR0cHM6Ly9ib29rcy1hcGktcHJvamVjdCIsImh0dHBzOi8vZGV2LXBjZHVkYjU4LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2NDYzOTgxMzMsImV4cCI6MTY0NjQ4NDUzMywiYXpwIjoiMW92bnhLQXA0UFdVamhWQTEwWEVYWkwxYjZQOURodkMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.pQf-bkUmd9IILK6mW2b1g64Alr4wCpqkXuBP80UN4mgOILYfe7IoAdo8lCoo9kxMnkGfSX2KYq32wozT12kvkz91H6qbbHPdrKGG1JpEu0ZOUgUW-HY7j90yPVxuda0w25q_PbbUh0UpdoLlOw2nh8sM9C669edPg9xAWArVzV6CQwKpP0A0p82HLdrBiAsHM7vnGx51vPOKjBT0l7z8qVhrhXjepl2_p5TQvl9j4uvkfBoIxTpgdNqnITkC5dCBymiXaSjX-hRC-17MrB3oJiDMCbTfPBR06YBDGPcjpds8hBXUXkGZg9RcGv5wKyaxt1Ade7e2ieJtfnyGyB7t8A"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://x30xphrtvb.execute-api.us-east-1.amazonaws.com/dev/books/2783253f-4149-46dd-8bc1-7303ef9ac8c8",
+							"protocol": "https",
+							"host": [
+								"x30xphrtvb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"books",
+								"2783253f-4149-46dd-8bc1-7303ef9ac8c8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get attachment URL",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImVxaHFib0FWQW1WNkxWQ1F1X01PZiJ9.eyJpc3MiOiJodHRwczovL2Rldi1wY2R1ZGI1OC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDAyMjYyMTg4NjMwODA5MDM3NTQiLCJhdWQiOlsiaHR0cHM6Ly9ib29rcy1hcGktcHJvamVjdCIsImh0dHBzOi8vZGV2LXBjZHVkYjU4LnVzLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE2NDYzOTgxMzMsImV4cCI6MTY0NjQ4NDUzMywiYXpwIjoiMW92bnhLQXA0UFdVamhWQTEwWEVYWkwxYjZQOURodkMiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.pQf-bkUmd9IILK6mW2b1g64Alr4wCpqkXuBP80UN4mgOILYfe7IoAdo8lCoo9kxMnkGfSX2KYq32wozT12kvkz91H6qbbHPdrKGG1JpEu0ZOUgUW-HY7j90yPVxuda0w25q_PbbUh0UpdoLlOw2nh8sM9C669edPg9xAWArVzV6CQwKpP0A0p82HLdrBiAsHM7vnGx51vPOKjBT0l7z8qVhrhXjepl2_p5TQvl9j4uvkfBoIxTpgdNqnITkC5dCBymiXaSjX-hRC-17MrB3oJiDMCbTfPBR06YBDGPcjpds8hBXUXkGZg9RcGv5wKyaxt1Ade7e2ieJtfnyGyB7t8A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://x30xphrtvb.execute-api.us-east-1.amazonaws.com/dev/books/313b6338-ab40-41dd-9262-42223ac514ac/attachment",
+							"protocol": "https",
+							"host": [
+								"x30xphrtvb",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"books",
+								"313b6338-ab40-41dd-9262-42223ac514ac",
+								"attachment"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ce2b42d4-8cc5-4f30-a6ed-e7f0f303c3fd",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "efb16c49-3866-4241-97d1-360ad72736d8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2e83c0fe-6650-44d5-a90f-4c27ff720d83",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "977c227e-2df3-42eb-9a48-ec25e2f7eeae",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "bf208e6b-f66d-4008-9366-dd541ff65425",
+			"key": "apiId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "9bc6399a-d2bb-4f2d-9ffa-8480370d383c",
+			"key": "authToken",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
